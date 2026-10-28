@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --cor-fundo: #17151F;
+  --cor-superficie: #24212F;
+  --cor-destaque: #B794F6;
+  --cor-texto: #F4F0FA;
+}
+
+html,
+body {
+  font-family: 'JetBrains Mono', monospace;
+}

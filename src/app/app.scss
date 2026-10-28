@@ -1,0 +1,119 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+.curriculo {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.sidebar {
+  background-color: var(--cor-superficie);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.conteudo {
+  min-width: 0;
+}
+
+.perfil {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background-color: var(--cor-destaque);
+  color: var(--cor-fundo);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 24px;
+  overflow-wrap: anywhere;
+}
+
+h2 {
+  color: var(--cor-destaque);
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.cargo {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.contato {
+  border-top: 1px solid #51485F;
+  padding-top: 24px;
+}
+
+.sobre,
+.habilidades,
+.trajetoria {
+  margin-bottom: 32px;
+}
+
+.habilidades ul {
+  padding-left: 20px;
+}
+
+.habilidades li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 760px) {
+  .curriculo {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px 16px;
+  }
+
+  .sidebar {
+    padding: 20px;
+  }
+}
+
+
+
+.formacao {
+  background-color: var(--cor-superficie);
+  border: 1px solid #51485F;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.formacao h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.status-formacao {
+  color: var(--cor-destaque);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}

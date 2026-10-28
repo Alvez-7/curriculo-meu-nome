@@ -1,0 +1,44 @@
+
+<main class="curriculo">
+  <aside class="sidebar">
+    <div class="perfil">
+      <div class="avatar" aria-hidden="true">SN</div>
+      <h1>{{ nome }}</h1>
+      <p class="cargo">{{ cargo }}</p>
+    </div>
+
+    <section class="contato">
+      <h2>Contato</h2>
+      <p>muriloalvez010@gmail.com</p>
+      <p>Fortaleza, CE</p>
+    </section>
+  </aside>
+
+  <section class="conteudo">
+    <section class="sobre">
+      <h2>Sobre mim</h2>
+      <p>{{ sobreMim }}</p>
+    </section>
+
+    <section class="habilidades">
+  <h2>Habilidades</h2>
+  <ul>
+    @for (habilidade of habilidades; track habilidade) {
+      <li>{{ habilidade }}</li>
+    }
+  </ul>
+</section>
+
+    
+<section class="trajetoria">
+  <h2>Trajetória</h2>
+
+  <article class="formacao">
+    <h3>Análise e Desenvolvimento de Sistemas</h3>
+    <p class="status-formacao">Em andamento</p>
+    <p>Curso em andamento.</p>
+  </article>
+</section>
+
+  </section>
+</main>
